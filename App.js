@@ -88,14 +88,19 @@ import ReactDOM from "react-dom";
 //ClassBased Component  -old
 //   Functional Component  -new
 
-const headingComponent = ()  =>{
+const Title = ()  =>{
   return  <h1 className ="heading">Namaste React</h1>
 }
-const headingComponent2 = ()  =>( <h1 className ="heading">Namaste React</h1>);
+//Component compistion
+const HeadingComponent2 = ()  =>(
+    <div id="container">
+         <h1 className ="heading">Namaste React</h1>
+         <Title/>
+    </div>);
   
 const root  = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(heading);
+root.render(<HeadingComponent2/>);
 
 
 
