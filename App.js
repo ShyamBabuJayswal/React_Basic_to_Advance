@@ -68,13 +68,38 @@ import ReactDOM from "react-dom";
 //Transpiled before it reacehes the js --Parcel-babel
 
 
-const heading= <h1 id="heading">Namaste React using Jsx</h1>
-// console.log(heading);--object
+// const heading= <h1 className = "head" id="heading" tabIndex="1">Namaste React using Jsx</h1>
+
+// const heading= (<h1 
+// className = "head" id="heading" 
+// tabIndex="1">
+// Namaste React using Jsx
+// </h1>)
+ // console.log(heading);--object
 
 
+// const root  = ReactDOM.createRoot(document.getElementById("root"));
+
+// root.render(heading);
+
+
+//React Component
+
+//ClassBased Component  -old
+//   Functional Component  -new
+
+const headingComponent = ()  =>{
+  return  <h1 className ="heading">Namaste React</h1>
+}
+const headingComponent2 = ()  =>( <h1 className ="heading">Namaste React</h1>);
+  
 const root  = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(heading);
+
+
+
+
 
 
 
