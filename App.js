@@ -55,7 +55,22 @@ import ReactDOM from "react-dom";
 
 // React Element --Object
 
-const heading= React.createElement("h1",{id:"heading"},"Namaste React");
+// const heading= React.createElement("h1",{id:"heading"},"Namaste React");
+//console.log(heading);--object
+
+
+// const root  = ReactDOM.createRoot(document.getElementById("root"));
+
+// root.render(heading);
+
+//jsx react
+//What is Jsx:- Html or Xml like syntax not html
+//Transpiled before it reacehes the js --Parcel-babel
+
+
+const heading= <h1 id="heading">Namaste React using Jsx</h1>
+// console.log(heading);--object
+
 
 const root  = ReactDOM.createRoot(document.getElementById("root"));
 
